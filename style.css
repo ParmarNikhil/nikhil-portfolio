@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis"; 
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+a{
+    color:black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('./fonts/Dosis-Regular.woff2') format('woff2'),
+        url('./fonts/Dosis-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis-Bold';
+    src: url('./fonts/Dosis-Bold.woff2') format('woff2'),
+        url('./fonts/Dosis-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.main{
+    background-color: #00ACA9;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.content-box{
+    display: flex;
+    height: 80vh;
+    width: 80%;
+    border-radius: 10px;
+    background-color: white;
+    margin: auto;
+    box-shadow: 1px 1px 10px 0 black;
+}
+
+div.content{
+    width: 70%;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.header-content{
+    position: fixed;
+    top: 0;
+    width: 56%;
+    padding: 10px 10px;
+}
+
+#menulist {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    padding: 0 20px 0 20px;
+    font-size: large;
+    font-family: "Dosis-Bold";
+    font-weight: bold;
+}
+#menulist li{
+    padding: 10px;
+}
+#menulist li a:hover{
+    color: whitesmoke;
+}
+
+.banner{
+    display: block;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects{
+height: 100%;
+max-height: 487px;
+width: 100%;
+padding:40px;
+overflow-x: scroll;
+overflow-y:hidden;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+
+.project-card{
+    margin-bottom: 20px;
+    margin-right: 26px;
+    min-width: 200px;
+    border: 1px solid;
+    padding: 10px;
+    width: 180px;
+    height: 180px;
+}
+
+a i{
+    padding-top: 20px;
+    font-size:large;
+    display: inline-block;
+}
+
+
+.banner h2{
+    margin-bottom: 10px;
+    font-family: "Dosis-Bold";
+    font-size: 30px;
+}
+.banner p{
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+.skills{
+    display: flex;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-25%);
+
+}
+
+.contactus{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.contactus i{
+    font-size: 70px;
+}
+/* .skill-card{
+    
+} */
+
+.skill-card h2{
+    font-family: "Dosis";
+    margin-bottom: 10px;
+}
+
+.skill-card h3{
+    font-weight: lighter;
+    margin-bottom: 8px;
+}
+
+.profile-box{
+    height: 100%;
+    width: 30%;
+    border-radius: 10px 0 0 10px;
+    background-color: #00ADA1;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.profile-box .img{
+    width: 200px;
+    background: url('./profile-img.jfif');
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    border: 3px solid ;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.img h2{
+    position: absolute;
+    bottom: -40px;
+    left: 25px;
+    min-width: 200px;
+    font-family: "Dosis-Bold";
+}
+
+@media (max-width:500px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .main .content-box{
+        height: 800px;
+        width: 100%;
+        display: flex;
+        padding: 0 0 0 0 ;
+        flex-direction: column;
+    }
+
+    .content-box .content{
+        width: 100%;
+        position: relative;
+        overflow-y: scroll;
+    }
+
+    div .profile-box{
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+    }
+    
+}
