@@ -74,7 +74,6 @@ div.content{
 
 #menulist {
     display: flex;
-    /* flex-direction: column; */
     list-style-type: none;
     gap: 50px;
     padding: 0 20px 0 20px;
@@ -263,10 +262,9 @@ a i{
     }
 
     .banner{
-        background: linear-gradient(rgba(2,2,2,0.2),rgba(0,0,0,0.4)),url("./profile-img.jfif");
         background-repeat: no-repeat;
        background-position-y: center;
-       color: #ffffff;
+       color: black;
     }
     
     .contactus i{
